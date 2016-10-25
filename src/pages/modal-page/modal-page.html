@@ -1,0 +1,33 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">Close</button>
+    </ion-buttons>
+    <ion-title>Modals</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+  <ion-item>
+    <ion-label>username</ion-label>
+    <ion-input type="text" name="username" [(ngModel)]="data.username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>password</ion-label>
+    <ion-input type="password" name="password" [(ngModel)]="data.password"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+
+  <button ion-button color="primary" full (click)="login()">Login</button>
+
+</ion-content>
